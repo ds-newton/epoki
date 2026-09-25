@@ -160,7 +160,7 @@ preview[date_col] = pd.to_datetime(preview[date_col], errors="coerce")
 col1, col2, col3 = st.columns(3)
 col1.metric("Rows", len(preview))
 col2.metric("Date range", f"{preview[date_col].min().date()} → {preview[date_col].max().date()}")
-col3.metric("Total disbursement", f"{preview[value_col].sum():,.0f}")
+col3.metric("Total Amount", f"{preview[value_col].sum():,.0f}")
 
 st.dataframe(preview.head(10), use_container_width=True)
 
