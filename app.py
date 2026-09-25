@@ -68,7 +68,7 @@ with st.sidebar:
 
     st.markdown("### Column mapping")
     date_col = st.text_input("Date column name", value="date")
-    value_col = st.text_input("Disbursement column name", value="disbursement_amount")
+    value_col = st.text_input("Disbursement column name", value="amount")
 
     st.markdown("### Strike / abnormal event")
     include_strike = st.checkbox("Include strike event", value=False)

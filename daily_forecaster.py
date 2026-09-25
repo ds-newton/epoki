@@ -16,7 +16,7 @@ Production-oriented pipeline that:
 Usage
 -----
     python daily_forecaster.py --csv path/to/disbursements.csv \
-        --date-col date --value-col disbursement_amount \
+        --date-col date --value-col amount \
         --strike-start 2025-10-29 --strike-end 2025-11-02 \
         --outdir ./forecast_output
 
@@ -838,7 +838,7 @@ def run_pipeline(
     df: pd.DataFrame | None = None,
     csv_path: str | None = None,
     date_col: str = "date",
-    value_col: str = "disbursement_amount",
+    value_col: str = "amount",
     strike_start: str | None = None,
     strike_end: str | None = None,
     backtest_horizon_days: int = 90,
@@ -988,7 +988,7 @@ def main():
     parser = argparse.ArgumentParser(description="Daily forecasting pipeline")
     parser.add_argument("--csv", required=True, help="Path to input CSV")
     parser.add_argument("--date-col", default="date")
-    parser.add_argument("--value-col", default="disbursement_amount")
+    parser.add_argument("--value-col", default="amount")
     parser.add_argument("--strike-start", default=None,
                          help="Optional strike/abnormal event start date. Leave blank to disable strike features.")
     parser.add_argument("--strike-end", default=None,
