@@ -89,7 +89,7 @@ Then open the local URL Streamlit prints (usually `http://localhost:8501`).
 
 **Required CSV:**
 ```csv
-date,disbursement_amount
+date,amount
 2025-01-01,125000000
 2025-01-02,138000000
 ```
