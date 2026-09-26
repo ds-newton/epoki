@@ -22,7 +22,7 @@ Historical Data → Feature Engineering (calendar, holidays, events)
 
 ## Key Features
 
-- **Flexible CSV upload** — default columns `date` + `disbursement_amount`, but column names are configurable. Data is auto-inspected (row count, date range, totals, preview).
+- **Flexible CSV upload** — default columns `date` + `amount`, but column names are configurable. Data is auto-inspected (row count, date range, totals, preview).
 - **Calendar & holiday features** — day-of-week, month, built-in Tanzania holidays, or custom holiday CSVs.
 - **Abnormal event handling** — mark strike/outage/disruption date ranges so they don't get learned as normal seasonality.
 - **Three forecasting models**:
